@@ -10,8 +10,16 @@ if (!defined('DS')) {
 	define("DS", DIRECTORY_SEPARATOR);
 }
 
+if (!defined('LIBRARY_DIR')) {
+    define('LIBRARY_DIR', dirname(__FILE__) . DS . 'libs' . DS);
+}
+
+if (!defined('CORE_DIR')) {
+    define('CORE_DIR', LIBRARY_DIR . 'core' . DS);
+}
+
 if (!defined('SMARTY_DIR')) {
-    define('SMARTY_DIR', dirname(__FILE__) . DS . 'libs' . DS . 'smarty' . DS);
+    define('SMARTY_DIR', LIBRARY_DIR . 'smarty' . DS);
 }
 
 if (!defined('SMARTY_DIR_SYSPLUGINS')) {

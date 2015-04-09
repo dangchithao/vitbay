@@ -2,7 +2,7 @@
 
 Class Controller {
     /**
-     * errors
+     *
      * @var type 
      */
     public $errors = array();
@@ -13,6 +13,12 @@ Class Controller {
      * @var type 
      */
     protected $model;
+    
+    /**
+     * Model name
+     * @var type 
+     */
+    protected $modelName;
 
     /**
      * View layer
@@ -24,12 +30,11 @@ Class Controller {
      * Construct model and view
      */
     public function __construct() {
-        // model
+        // set model
         $this->setModel();
-
-        // view
+        
         $this->view = new View();
-        $this->view->set('model', $model);
+        $this->view->set('model', $this->modelName);
     }
     
     /**
@@ -40,7 +45,7 @@ Class Controller {
      */
     protected function renderView($pathContent, $data = null) {
         // template path
-        $view = strtolower($this->getModelName()) . DS . $pathContent;
+        $view = strtolower($this->modelName) . DS . $pathContent;
 
         // set data to view
         $this->view->set('data', $data);
@@ -55,8 +60,8 @@ Class Controller {
      */
     private function setModel() {
         $controllerName = get_class($this);
-        $modelName = rim(str_replace('Controller', '', $controllerName));
-        $model = ucfirst($modelName);
+        $this->modelName = rtrim(str_replace('Controller', '', $controllerName));
+        $model = ucfirst($this->modelName);
         
         $this->model = new $model();
     }            

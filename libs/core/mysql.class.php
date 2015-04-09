@@ -4,7 +4,7 @@
  * Connect to MySQL database
  * Coding by Dang Chi Thao
  */
-require 'models/manipulate.php';
+require 'interface/manipulate.php';
 require 'configs/db.php';
 
 class THAODC implements Manipulate {
