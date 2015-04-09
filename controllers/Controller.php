@@ -1,55 +1,63 @@
 <?php
 
 Class Controller {
-
     /**
-     *
+     * errors
      * @var type 
      */
     public $errors = array();
 
     /**
+     * Model layer
      *
      * @var type 
      */
     protected $model;
 
-    /*
-      Pagesize variable is number of record will show .
+    /**
+     * View layer
+     * @var type 
      */
-    protected $pageSize;
-
-    /*
-      Number of Page after caculated .
-     */
-    protected $itemPerPage;
     protected $view;
-
+    
+    /**
+     * Construct model and view
+     */
     public function __construct() {
-		$model = $this->getModelName();
-		
-		$this->model = new $model();
-		
-        $this->view = new View();
-		$this->view->set('tabName', strtolower($model));
-    }
+        // model
+        $this->setModel();
 
+        // view
+        $this->view = new View();
+        $this->view->set('model', $model);
+    }
+    
+    /**
+     * load template
+     * 
+     * @param type $pathContent
+     * @param type $data
+     */
     protected function renderView($pathContent, $data = null) {
         // template path
         $view = strtolower($this->getModelName()) . DS . $pathContent;
 
         // set data to view
         $this->view->set('data', $data);
-		$this->view->set('base_url', Tools::getBaseUrl());
+        $this->view->set('base_url', Tools::getBaseUrl());
 
         // display template
         $this->view->render($view);
     }
-
-    private function getModelName() {
+    
+    /**
+     * Set model
+     */
+    private function setModel() {
         $controllerName = get_class($this);
-        $modelName = trim(str_replace('Controller', '', $controllerName));
-        return ucfirst($modelName);
-    }
-
+        $modelName = rim(str_replace('Controller', '', $controllerName));
+        $model = ucfirst($modelName);
+        
+        $this->model = new $model();
+    }            
 }
