@@ -1,0 +1,118 @@
+*{margin: 0; padding: 0;}
+#tintuc01{
+    width: 520px;
+    height: 220px;
+    font-family: arial;
+    background:url(photos/hinhanh02.png);
+}
+#tintuc02,
+#tintuc03,
+#tintuc04,
+#tintuc05,
+#tintuc06,
+#tintuc07,
+#tintuc08,
+#tintuc09,
+#tintuc10,
+#tintuc11,
+#tintuc12,
+#tintuc13,
+#tintuc14,
+#tintuc15{
+    float: left;
+    width: 520px;
+    height: 220px;
+    background: url(photos/hinhanh02.png)/*#dedede*/;
+    margin-top: 10px;
+    font-family: arial;
+}
+
+
+.title a {
+    margin-top:  5px;
+    margin-left: 5px;
+    font-size:  18px;
+    color: #004000;
+    text-decoration: none;
+}
+.title a:hover {
+    text-decoration: underline;
+}
+.childbody{
+    height: 130px;
+    margin-left: 5px;
+    margin-top:  10px;
+}
+.childbody img{
+    width: 140px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    border: .5em solid #cecece;
+}
+.childbody img:hover{
+    border: 0.5em solid #008040;
+    height: 110px;
+}
+.childbody p{
+    color:  black;   
+}
+.read{
+    float: right;
+	position: absolute;
+	right: 195px;
+    margin-top: 5px;
+    margin-right: 10px;
+	text-align: center;
+    width: 129px;
+    height: 37px;
+    background: url(photos/more-link.png)/*#FA4B88*/;
+}
+.read:hover{
+    /*background: #dedede;
+    color: #FA4B88;*/
+	
+}
+.read a{
+	position: absolute;
+	top: 5px;
+	left: 40px;
+	font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.read a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/*phan trang*/
+#phantrang{
+    float: right;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom:  10px;
+    margin-right: 10px;
+}
+#phantrang ul{
+    list-style:  none;
+}
+#phantrang ul li{
+    float: left;/*lam cho nam ngang*/
+    margin-left: 10px;
+}
+#phantrang ul li a{
+    display: block;
+    color: white;
+    text-decoration:  none;
+    background: #FA4B88;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#phantrang ul li a:hover{
+    background: white;
+    text-decoration: underline;
+    color: blue;
+}

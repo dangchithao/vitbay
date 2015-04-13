@@ -1,0 +1,85 @@
+*{margin: 0; padding: 0;}
+
+#work {
+    margin-top: 0px;
+    margin-left: 0px;
+    /*display: none;*/
+}
+
+#work p {
+    margin-top: 40px;
+}
+
+#work button, #work input.tt{
+    padding: 5px;
+}
+/*Tim ki?m*/
+
+#form_search {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#form_search button {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+#result {
+    clear: both;
+    /*float: left;*/
+    width: 520px;
+}
+
+#result table {
+    width: 520px;
+}
+
+#result table tr.title {
+    padding: 5px ;
+    height: 40px;
+    background: #BBD9D6;
+}
+
+#result table tr {
+    background: #DDC6B7;
+    height: 30px;
+}
+#result table td {
+    text-align: center;
+}
+
+#result table td form input {
+    width: 20px;
+}
+#phantrang ul{
+    list-style:  none;
+}
+#phantrang ul li{
+    float:left;/*lam cho nam ngang*/
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+#phantrang ul li a{
+    display: block;
+    color: white;
+    text-decoration:  none;
+    background: #FA4B88;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#phantrang ul li a:hover,
+#phantrang ul li a:focus{
+    background: white;
+    text-decoration: underline;
+    color: blue;
+}
+
+#phantrang ul li a:hover {
+    background: white;
+    color: blue;
+}

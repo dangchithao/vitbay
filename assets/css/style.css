@@ -1,0 +1,699 @@
+*{margin: 0; padding: 0;
+    font-family: Times New Roman,Times,serif;
+}
+/*----------------------------------------------wrapper-------------------------*/
+#wrapper{
+    width: 990px;
+    margin: 0px auto;
+}
+/*----------------------------------header--------------------------------*/
+div.banner {
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    text-align: center;
+    background: url('../photos/nav2.png') repeat-x;
+}
+/*dinh dang banner*/
+div#ja-banner{
+    width: 990px;
+    height: 100px;
+    margin: auto;
+/*    margin-top: 5px;
+    margin-bottom: 5px;*/
+}
+div#logo{
+    float: left;
+    width: 240px;
+    height: 100px;
+    border: 0px;
+}
+div#logo:hover{
+    background: url('../photos/logo_main_hover2.png');
+}
+div#logo a img{
+    border: 0px;
+}
+div#ja-form{
+    float: left;
+    width: 100%;
+}
+div#top{
+    width: 100%;
+    height: 40px;
+    margin-top: 0px;
+    text-align: center;
+}
+div.form_to_cart{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 18px;
+}
+div#form{
+    float: left;
+    border: 0.1em solid #E7E7E7;
+    height: 40px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+div#form div#keyword{
+    float: left;
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+}
+div#form div#find{
+    float: left;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+}
+div#form div#find a{
+    padding: 40px 40px 40px 40px;
+}
+div#ico_cart{
+    float: right;
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+    border: 0.1em solid #ECE9D8;
+}
+div#ico_cart{
+    background: url('../photos/ico-cart3.png') no-repeat;
+}
+div#ico_cart span{
+    margin-left: 92px;
+    color: white;
+}
+/*dnh dang phan menu*/
+
+div#topnav{
+    width: 100%;
+    height: 50px;
+    
+    /*display: inline-block;*/
+    /*
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background: #0080FF;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0em;
+    text-align: left;
+    */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#menu-border-top {
+    background-color: #F36362;
+    height: 2px;
+    width: 100%;
+}
+ul#menu {
+    list-style: none;
+    width: 81%;
+    position: relative;
+    margin: auto;
+}
+ul#menu li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+#active-menu {
+    background-color: #F36362;/*#de4a4a;*/
+}
+#active-menu a {
+    color: white;
+}
+ul#menu li:hover {
+    background-color: #F36362;
+    color: white;
+}
+li#first{
+    border-top-left-radius: 5px;
+}
+ul#menu li#first:hover{
+    background: url('../photos/menu3_copy.jpg') repeat-x;
+}
+ul#menu li#last{
+    border-right: 0px;
+}
+li#first a{
+    width: 25px;
+    height: 40px;
+}
+ul#menu li a{
+    font-size: 14px;
+    font-weight: bold;    
+    padding: 0px 17px;
+    display: block;
+    /*color: #428bca;*/
+    text-decoration: none;
+}
+ul#menu li a:hover{
+    color: white;
+    text-decoration: none;
+}
+/*----------submenu--------------*/
+div#ja-content{
+    clear: both;
+    margin-bottom: 5px;
+    border: 0.1em solid #cecece;
+    text-align: left;
+}
+div#ja-content ul{
+    list-style: none;
+    height: 40px;
+    background-color: /*#F8F8F8 #00C13F*/#ECE9D8;
+}
+div#ja-content ul li{
+    /*display: inline;*/
+    float: left;
+    border-right: 0.1em solid #cecece;
+    font-size: 15px;
+}
+div#ja-content ul li a{
+    padding: 10px 15px;
+    display: inline-block;
+    color: #0062B7;
+    /*font-weight: bold;*/
+    text-decoration: none;
+}
+div#ja-content ul li a:hover{
+    color: #f7640d;
+    text-decoration: underline;
+}
+/*----------End submenu--------------*/
+/*---------------------------------End top-----------------------------------*/
+
+
+/*--------------------------------Container-------------------------------------*/
+div#container{
+    width: 990px;
+    background-color: white;
+}
+
+
+/*---------------maincontent-------------------*/
+div.maincontent{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+/*---------------sidebar-----------*/
+div#sidebar{
+    width: 200px;
+    float: left;
+    border: 0.1em solid #cecece;/*C0E5F6;*/
+}
+div#sidebar h3{
+    text-align: center;
+}
+div#sidebar ul{
+    margin: auto;
+    border-top: 0.1em solid #cecece;
+    width: 90%;
+    list-style: none; 
+}
+
+div#sidebar ul li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+/*div#sidebar ul li:hover{
+    background-color: #FDFBEE;
+}*/
+
+div#sidebar ul li a{
+    color: /*#59abe8*/#0062B7;
+    text-decoration: none;
+    font-size: 15px;
+}
+div#sidebar ul li a:hover{
+    color: #f7640d;
+    text-decoration: underline;
+}
+/*-------------End sidebar-----------*/
+div.content{
+    width: 780px;
+    float: left;
+    margin-left: 5px;
+    /*border: 0.1em solid #cecece;*/
+}
+
+/*-------------------------------spquantam-----------------*/
+div.spquantam{
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div#listsp{width: 100%;}
+div#dm_title{
+    color: #f7640d;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid #cecece;
+}
+div#listsp div{
+    float: left;
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-color: white;
+    border: 0.1em solid white;
+}
+div#listsp div img{
+    width: 150px;
+    height: 180px;
+}
+div#listsp div a{
+    font-size: 12px;
+    color: /*#59abe8;*/#0553ab;
+    text-decoration: none;
+}
+div#listsp div a:hover{
+    color: #f7640d;
+    text-decoration: underline;
+}
+/*-------------------------------end spquantam-----------------*/
+
+/*----danh muc---*/
+div#danhmuc{
+    float: left;
+    clear: both;
+    margin-top: 15px;
+    width: 990px;
+}
+div#danhmuc ul{
+    list-style: none;
+    width: 990px;
+    height: 140px;
+}
+div#danhmuc ul li{
+    float: left;
+}
+div#danhmuc ul li a{
+    padding: 2px;
+}
+div#danhmuc ul li a img{
+    border: 0.1em solid #cecece;
+}
+div#danhmuc ul li:hover a img{
+    border: 0.1em solid #0553ab;
+}
+/*----------------------------------------------End #wrapper-------------------------*/
+
+/*-----------------------------Footer------------------------*/
+
+div#footer{
+    float: left;
+    clear: both;
+    width: 100%;
+    background: url("photos/button.bmp") repeat-x;
+    height: 230px;
+    border-top: 0.1em solid #cecece;
+    border-bottom: 0.1em solid #cecece;
+    margin-top: 10px;
+}
+#div01{
+    float: left;
+    font-size: 15px;
+    margin-left:  10px;
+    margin-top: 10px;
+}
+#div01 p{
+    float: left;
+    clear: both;
+    margin-top: 15px;
+}
+#div02{
+    float: right;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+#footer p a{
+    text-decoration: none;
+    color: #3a8604;
+    font-size: 15px;
+}
+#footer p a:hover{
+    text-decoration: underline;
+    color: #296002;
+    font-size: 15px;
+}
+/*-----------------------------End #Footer------------------------*/
+
+/*----------------------------viewone.php----------------------------*/
+div#viewimg{
+    float: left;
+    /*border: 0.1em solid #cecece;*/
+    width: 30%;
+}
+div#viewimg img{
+    height: 400px;
+    width: 290px;
+}
+div#info_p{
+    float: left;
+    width: 68%;
+    border-bottom: 0.1em solid #cecece;
+    margin-left: 15px;
+}
+div#info_p p{
+    margin-top: 10px;
+    text-align: left;
+}
+div#info_p p a{
+    color: #59abe8;
+    font-size: 14px;
+    margin-left: 15px;
+}
+div#info_p p a:hover{
+    color: #f7640d;
+}
+div#children_info{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+div#children_info p{
+    /*margin-top: 5px;*/
+    font-size: 14px;
+}
+
+div#creat_cart{
+    float: left;
+    width: 68%;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-bottom: 0.1em solid #cecece;
+}
+div#gia{
+    float: left;
+    width: 250px;
+}
+div#gia p{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+div#phi{
+    float: left;
+}
+div#phi a{
+    color: #59abe8;
+    font-size: 14px;
+    text-decoration: none;
+}
+div#phi a:hover{
+    color: #f7640d;
+    text-decoration: underline;
+}
+
+div#button_dat{
+   float: left;
+   width: 350px;
+}
+div#button_dat p{
+   float: right;
+   font-size: 14px;
+}
+div#button_dat input{
+    width: 35px;
+    height: 35px;
+    border: 0.1em solid #ee970c;
+}
+
+div#button_dat button{
+   padding: 15px;
+   margin-left: 15px;
+}
+
+/*------Cothebanquantam----*/
+div.cothebanquantam{
+    float: left;
+    clear: both;
+    width: 990px;
+    height: 280px;
+    margin-top: 10px;
+    border: 0.1em solid #cecece;
+}
+div.cothebanquantam div#tit-top{
+    float: left;
+    width: 100%;
+    height: 20px;
+    border-bottom: 0.1em solid #cecece;
+    text-align: left;
+    color: #f7640d;
+}
+div.cothebanquantam div#p-quantam{
+    float: left;
+    clear: both;
+    width: 990px;
+    height: 250px;
+    margin-top: 10px;
+}
+div.cothebanquantam div#p-quantam div{
+    float: left;
+    width: 195px;
+    height: 220px;
+    border: 0 solid white;
+}
+div.cothebanquantam div#p-quantam div a{
+    width: 195px;
+    height: 220px;
+    border: 0 solid white;
+    color: #0553ab;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.cothebanquantam div#p-quantam a:hover{
+    text-decoration: underline;
+    color: #f7640d;
+}
+div.cothebanquantam div#p-quantam div p#p-gia{
+    color: #a4080e;
+    font-size: 20px;
+    font-weight: bold;
+}
+div.cothebanquantam div#p-quantam div p#link-p a{
+    font-size: 14px;
+    color: #158fea;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*---------content-comment--------*/
+
+div.content-comment{
+    float: left;
+    clear: both;
+    width: 780px; 
+    margin-top: 10px;
+}
+div.content-comment div#p-content{
+    width: 780px;
+    border: 0.1em solid #cecece;
+    text-align: left;
+}
+div.content-comment div#p-comment{
+    width: 780px;
+    padding-top: 20px;
+}
+div.content-comment div#p-comment div#numbercmt{
+    border: 0.1em solid #cecece;
+    text-align: left;
+    width: 780px;
+    font-size: 14px;
+}
+div.content-comment div#p-comment div#view_cmt div{
+    width: 780px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+div.content-comment div#p-comment div#cmt{
+    margin-top: 40px;
+}
+div.content-comment div#p-comment div#cmt form input, textarea{
+    border: 0.1em solid #ee970c;
+}
+div.content-comment div#p-comment div#cmt form button:hover{
+    cursor: pointer;
+}
+/*--------End comment-------*/
+
+/*-------Bán chạy nhất-------*/
+div.banchaynhat{
+    float: left;
+    width: 200px;
+    border: 0.1em solid #cecece;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+div.banchaynhat div#title-banchaynhat{
+    width: 200px;
+    height: 20px;
+    border-bottom: 0.1em solid #cecece;
+    text-align: center; color: #f7640d;
+}
+div.banchaynhat div#p-banchaynhat{
+    width: 180px; margin: auto;
+}
+div.banchaynhat div#p-banchaynhat div{
+    text-align: center;
+    width: 180px;
+    height: 200px;
+    border-bottom: 0.1em solid #cecece;
+    margin-top: 10px;
+}
+div.banchaynhat div#p-banchaynhat a{
+    color: #0553ab;
+    text-decoration: none;
+}
+div.banchaynhat div#p-banchaynhat a:hover{
+    text-decoration: underline;
+    color: #f7640d;
+}
+/*-------------p_cungloa-----i*/
+div.p_cungloai_title{
+    float: left;
+    width: 48%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 0.1em solid #cecece;
+    color: #f7640d;
+    font-weight: bold;
+}
+div.p_cungloai{
+    float: left;
+    width: 48%;
+    margin-left: 10px;  
+}
+
+
+
+/*----------------------------End viewone.php----------------------------*/
+
+/*----------------------------view_sach_tacgia----------------------------*/
+div.sach_tacgia{
+    width: 78%;
+    float: left;
+    margin-left: 1%;
+    /*border-left: 0.1em solid #cecece;*/
+}
+div#top_sach{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+div#img_author{
+    float: left;
+    width: 20%;
+}
+div#img_author img{
+    height: 200px;
+    width: 150px;
+    border: 0.1em solid #cecece;
+}
+div#author{
+    float: left;
+    width: 78%;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+div#author b{
+    text-align: left;
+    font-size: 20px;
+}
+div#tatca_sach{
+    clear: both;
+    border-top: 0.1em solid #cecece;
+    margin-top: 20px;
+}
+/*----------------------------End view_sach_tacgia----------------------------*/
+
+/*----------------------------sach_quantam----------------------------*/
+div#title{
+    width: 780px;
+    height: 20px;
+    border-bottom: 0.1em solid #cecece;
+    color: #f7640d;
+}
+div#p_sach{
+    width: 780px;
+    clear: both;
+    margin-top: 10px;
+}
+div#p_sach a{
+    color: #158fea;
+    font-size: 15px;
+    text-decoration: none;
+}
+div#p_sach a:hover{
+    color: #f7640d;
+    text-decoration: underline;
+}
+
+div#image{
+    float: left;
+    width: 100px;
+    border: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+div#image img{
+    width: 100px;
+    height: 150px;
+    border: 0;
+}
+div#p_info{
+    float: left;
+    width: 650px;
+    margin-left: 20px;
+    border: 0px;
+    font-size: 14px;
+}
+div#p_info div{
+    font-weight: bold;
+    text-align: left;
+}
+div#p_info p{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 12px;
+}
+div#stt{
+    clear: both;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-bottom: 0.1em solid #cecece;
+    font-size: 15px;
+}
+
+
+/*----------------------------End sach_quantam----------------------------*/
+
+
+
+
+
+/*---------------------------------------------End wraaper----------------------*/
+.class{
+    color: #1b6eb6;
+    cursor: pointer;
+}
