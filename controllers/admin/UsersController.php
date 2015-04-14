@@ -7,8 +7,13 @@
  */
 
 Class UsersController extends Controller {
+	public function __construct() {
+		$this->loadModel(array('Users'));
 
-    public function indexAction() {
+		parent::__construct();
+	}
+
+	public function indexAction() {
         if (!empty($_GET)) {
             $conditions = array();
 
@@ -21,12 +26,12 @@ Class UsersController extends Controller {
             }
 
             if (!empty($conditions)) {
-                $this->model->conditions = $conditions;
+                $this->model->Users->conditions = $conditions;
             }
         }
 
-        $data = $this->model->getList();
-        $this->renderView('index.tpl', $data);
+        $data = $this->model->Users->getList();
+        $this->renderView('admin/users/index.tpl', $data);
     }
 
     public function addAction() {

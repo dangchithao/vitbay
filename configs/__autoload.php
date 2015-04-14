@@ -39,7 +39,7 @@ function load_lib($class) {
 }
 
 function load_app($class) {
-    $folders = array("configs", "controllers", "models", "helpers", "views");
+    $folders = array("configs", "controllers", "models", "helpers", "views", "controllers/admin", "controllers/front");
     foreach ($folders as $folder) {
         $fileName = $folder . DS . $class . ".php";
         if (is_readable($fileName)) {

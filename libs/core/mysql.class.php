@@ -4,16 +4,16 @@
  * Connect to MySQL database
  * Coding by Dang Chi Thao
  */
-require 'interface/manipulate.php';
-require 'configs/db.php';
+require_once 'interface/manipulate.php';
+require_once 'configs/db.php';
 
 class T_MYSQL implements Manipulate {
 
     public static $instance;
     private $conn;
 
-    public function __construct(DB $MYSQL) {
-        $this->connect($MYSQL::$SERVER_NAME, $MYSQL::$USER_NAME, $MYSQL::$PASSWORD, $MYSQL::$DB_NAME);
+    public function __construct() {
+        $this->connect(DB::$SERVER_NAME, DB::$USER_NAME, DB::$PASSWORD, DB::$DB_NAME);
     }
 
     /*

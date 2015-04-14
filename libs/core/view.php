@@ -42,13 +42,13 @@ class View {
 	 */
     public function render($view) {
 		// Header
-        $this->smarty->display('layout' . DS . 'header.tpl');
+        $this->smarty->display('admin/layout' . DS . 'header.tpl');
 		
 		// Content
         $this->smarty->display($view);
 		
 		// Footer
-        $this->smarty->display('layout' . DS . 'footer.tpl');
+        $this->smarty->display('admin/layout' . DS . 'footer.tpl');
     }
 
 }

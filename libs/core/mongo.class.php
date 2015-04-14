@@ -1,6 +1,6 @@
 <?php
-require 'interface/manipulate.php';
-require 'configs/db.php';
+require_once 'interface/manipulate.php';
+require_once 'configs/db.php';
 
 class T_MONGO implements Manipulate {
 	public static $instance;
