@@ -12,8 +12,8 @@ class T_MYSQL implements Manipulate {
     public static $instance;
     private $conn;
 
-    public function __construct() {
-        $this->connect(MYSQL::$SERVER_NAME, MYSQL::$USER_NAME, MYSQL::$PASSWORD, MYSQL::$DB_NAME);
+    public function __construct(DB $MYSQL) {
+        $this->connect($MYSQL::$SERVER_NAME, $MYSQL::$USER_NAME, $MYSQL::$PASSWORD, $MYSQL::$DB_NAME);
     }
 
     /*

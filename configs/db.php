@@ -5,15 +5,10 @@
  * and open the template in the editor.
  */
 
-class MYSQL {
+class DB {
 	public static $SERVER_NAME = 'localhost'; // 127.0.0.1
 	public static $USER_NAME = 'root';
 	public static $PASSWORD = '';
 	public static $DB_NAME = 'vitbay';
-	public static $DB_DRIVER = '';
+	public static $DB_DRIVER = 'mysql';
 }
-
-class MONGO {
-	
-}
-

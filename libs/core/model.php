@@ -1,20 +1,6 @@
 <?php
 
-require "mysql.class.php";
-
-Class DBProvider {
-	public static function getDB() {
-		$db = Configuration.getDatabase();
-		
-		if ($db == 'mongo') {
-			return T_MONGO::getInstance();
-		} else if ($db == 'mysql') {
-			return T_MYSQL::getInstance();
-		} else {
-			throw new Exception('DB not support.');
-		}
-	}
-}
+require "DBProvider.php";
 
 Class Model {
     // Connect DB
@@ -25,7 +11,7 @@ Class Model {
     public $conditions = array();
 
     public function __construct() {
-        $this->THAODC = THAODC::getInstance();
+        $this->THAODC = DBProvider::getInstance();
     }
 
     public function Add($arrayValues) {

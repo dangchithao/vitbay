@@ -6,8 +6,8 @@ class T_MONGO implements Manipulate {
 	public static $instance;
     private $conn;
 
-    public function __construct() {
-        $this->connect(vitbay::$SERVER_NAME, vitbay::$USER_NAME, vitbay::$PASSWORD, vitbay::$DB_NAME);
+    public function __construct(DB $MONGO) {
+        $this->connect($MONGO::$SERVER_NAME, $MONGO::$USER_NAME, $MONGO::$PASSWORD, $MONGO::$DB_NAME);
     }
 
     /*
