@@ -1,19 +1,13 @@
 <?php
-
-/**
- * Connect to MySQL database
- * Coding by Dang Chi Thao
- */
 require 'interface/manipulate.php';
 require 'configs/db.php';
 
-class T_MYSQL implements Manipulate {
-
-    public static $instance;
+class T_MONGO implements Manipulate {
+	public static $instance;
     private $conn;
 
     public function __construct() {
-        $this->connect(MYSQL::$SERVER_NAME, MYSQL::$USER_NAME, MYSQL::$PASSWORD, MYSQL::$DB_NAME);
+        $this->connect(vitbay::$SERVER_NAME, vitbay::$USER_NAME, vitbay::$PASSWORD, vitbay::$DB_NAME);
     }
 
     /*
@@ -22,7 +16,7 @@ class T_MYSQL implements Manipulate {
 
     public static function getInstance() {
         if (self::$instance == null) {
-            self::$instance = new T_MYSQL();
+            self::$instance = new T_MONGO();
         }
 
         return self::$instance;
@@ -144,5 +138,4 @@ class T_MYSQL implements Manipulate {
 
         return get_resource_type(mysql_query($sql, $this->conn));
     }
-
 }

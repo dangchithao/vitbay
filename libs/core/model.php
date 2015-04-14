@@ -2,6 +2,20 @@
 
 require "mysql.class.php";
 
+Class DBProvider {
+	public static function getDB() {
+		$db = Configuration.getDatabase();
+		
+		if ($db == 'mongo') {
+			return T_MONGO::getInstance();
+		} else if ($db == 'mysql') {
+			return T_MYSQL::getInstance();
+		} else {
+			throw new Exception('DB not support.');
+		}
+	}
+}
+
 Class Model {
     // Connect DB
     protected $THAODC;
